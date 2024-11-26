@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
+app.get('/api/civilizations', (req, res) => {
+    res.json({ message: 'Acá estarán las civilizaciones en desarrollo.' });
+});  
+
 module.exports = app;
