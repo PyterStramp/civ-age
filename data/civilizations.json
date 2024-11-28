@@ -17,13 +17,13 @@
       "Warwolf"
     ],
     "description_tech": [
-      "Los arqueros a pie tienen +1 de alcance y las Torres +2 de ataque.",
-      "Los Lanzapiedras obtienen daño en área y +100% de puntería contra unidades."
+      "Los arqueros a pie tienen +1 de alcance y las Torres +2 de ataque",
+      "Los Lanzapiedras obtienen daño en área y +100% de puntería contra unidades"
     ],
     "civilization_bonus": [
-      "Los Centros Urbanos cuestan -50% madera a partir de la Edad de los Castillos.",
-      "Los arqueros a pie (excepto Hostigadores) tienen +1/+2 de alcance en la Edad de los Castillos/Imperial.",
-      "Los pastores trabajan un 25% más rápido."
+      "Los Centros Urbanos cuestan -50% madera a partir de la Edad de los Castillos",
+      "Los arqueros a pie (excepto Hostigadores) tienen +1/+2 de alcance en la Edad de los Castillos/Imperial",
+      "Los pastores trabajan un 25% más rápido"
     ],
     "team_bonus": "La Galería de tiro con arco trabaja un 10% más rápido",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_britons.png"
@@ -47,17 +47,110 @@
       "Furor Celta"
     ],
     "description_tech": [
-      "Los Castillos y torres disparan un 33% más rápido.",
-      "Las unidades del Taller de Maquinaria de Asedio tienen un +40% de Puntos de Resistencia."
+      "Los Castillos y torres disparan un 33% más rápido",
+      "Las unidades del Taller de Maquinaria de Asedio tienen un +40% de Puntos de Resistencia"
     ],
     "civilization_bonus": [
-      "La infantería se mueve un 15% más rápido a partir de la Edad Feudal.",
-      "Las Armas de Asedio disparan un 25% más rápido.",
-      "Los aldeanos recogen madera un 25% más rápido.",
-      "El ganado enemigo se puede convertir sin importar si el enemigo tiene visión sobre la unidad."
+      "La infantería se mueve un 15% más rápido a partir de la Edad Feudal",
+      "Las Armas de Asedio disparan un 25% más rápido",
+      "Los aldeanos recogen madera un 25% más rápido",
+      "El ganado enemigo se puede convertir sin importar si el enemigo tiene visión sobre la unidad"
     ],
     "team_bonus": "El Taller de Maquinaria de Asedio trabaja un 20% más rápido",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_celts.png"
+  },
+  {
+    "id": "3",
+    "name": "Francos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Caballería"
+    ],
+    "unique_unit": [
+      "Lanzador de Hachas"
+    ],
+    "description_unit": [
+      "Unidad de infantería con ataque a distancia"
+    ],
+    "unique_tech": [
+      "Hacha de Arista",
+      "Código Caballeresco"
+    ],
+    "description_tech": [
+      "Otorga a los Lanzadores de hachas +1 de alcance",
+      "Aumenta la velocidad de trabajo de los Establos en un +40%"
+    ],
+    "civilization_bonus": [
+      "Las mejoras para las Granjas son gratis",
+      "Los Castillos son un 15%/25% más baratos en la Edad de los Castillos/Imperial",
+      "Las Unidades montadas tiene +20% Puntos de Resistencia (a partir de la Edad Feudal)",
+      "Los aldeanos recogen las bayas un 15% más rápido"
+    ],
+    "team_bonus": "Los Jinetes tienen +2 de Línea de visión",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_franks.png"
+  },
+  {
+    "id": "4",
+    "name": "Godos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Infantería"
+    ],
+    "unique_unit": [
+      "Huscarle"
+    ],
+    "description_unit": [
+      "Infantería que es virtualmente inmune al fuego de los arqueros"
+    ],
+    "unique_tech": [
+      "Anarquía",
+      "Movilización"
+    ],
+    "description_tech": [
+      "Otorga a la infantería +5 de ataque contra caballería y +4 de ataque contra camellos",
+      "Aumenta la velocidad de regeneración de los Berserkers"
+    ],
+    "civilization_bonus": [
+      "La infantería es un 20%/25%/30%/35% más barata en la Alta Edad Media/Feudal/Castillo/Imperial",
+      "La infantería tiene +1/+2/+3 de ataque contra edificios estándares en la Edad Feudal/Castillo/Imperial",
+      "Los aldeanos tienen +5 de ataque contra la caza agresiva (Jabalí, Jabalina, Elefante, Rinoceronte) y llevan +15 alimento de la caza. La caza dura 20% más",
+      "Telar se desarrolla instantáneamente",
+      "+10 de población máxima en la Edad Imperial"
+    ],
+    "team_bonus": "Los Cuarteles trabajan un 20% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_goths.png"
+  },
+  {
+    "id": "5",
+    "name": "Teutones",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Infantería"
+    ],
+    "unique_unit": [
+      "Caballero de la Orden Teutónica"
+    ],
+    "description_unit": [
+      "Unidad de infantería con mucha armadura y ataque"
+    ],
+    "unique_tech": [
+      "Blindaje",
+      "Almenas"
+    ],
+    "description_tech": [
+      "Armas de asedio tienen +3 de armadura",
+      "+3 alcance de castillos; infantería guarecida dispara flechas"
+    ],
+    "civilization_bonus": [
+      "Las granjas cuestan un 40% menos",
+      "Las torres pueden guarecer el doble de unidades",
+      "Matacanes y Hierbas Medicinales gratis",
+      "El Centro Urbano puede guarecer + 10 unidades",
+      "Los monjes pueden curar dos veces más lejos",
+      "Unidades del Cuartel y del Establo reciben +1 de armadura en la Edad de los Castillos y +1 en la Edad Imperial"
+    ],
+    "team_bonus": "Las unidades son más resistentes a la conversión",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_teutons.png"
   },
   {
     "id": "6",
@@ -80,18 +173,233 @@
       "Trance Frenético"
     ],
     "description_tech": [
-      "Otorga a la infantería +5 de ataque contra caballería y +4 de ataque contra camellos.",
-      "Aumenta la velocidad de regeneración de los Berserkers."
+      "Otorga a la infantería +5 de ataque contra caballería y +4 de ataque contra camellos",
+      "Aumenta la velocidad de regeneración de los Berserkers"
     ],
     "civilization_bonus": [
-      "La infantería tiene +10%/+15%/+20% Puntos de Resistencia en la Edad Feudal/Castillos/Imperial.",
-      "Carretilla y Carro de Mano gratis.",
-      "Los barcos de guerra son un 15%/15%/20% más baratos en la Edad Feudal/Castillos/Imperial."
+      "La infantería tiene +10%/+15%/+20% Puntos de Resistencia en la Edad Feudal/Castillos/Imperial",
+      "Carretilla y Carro de Mano gratis",
+      "Los barcos de guerra son un 15%/15%/20% más baratos en la Edad Feudal/Castillos/Imperial"
     ],
     "team_bonus": "Los muelles son 15% más baratos",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_vikings.png"
   },
-    {
+  {
+    "id": "7",
+    "name": "Bizantinos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Defensa"
+    ],
+    "unique_unit": [
+      "Catafracta"
+    ],
+    "description_unit": [
+      "Caballería pesada que destaca en el combate contra la infantería y los jinetes a camello"
+    ],
+    "unique_tech": [
+      "Fuego Griego",
+      "Logística"
+    ],
+    "description_tech": [
+      "Los Brulotes obtienen +1 de alcance; Dromones +0.2 de daño en área; Torres de Bombardeo +0.5 de daño en área",
+      "Otorga a las Catafractas daño en área en un radio de 0.5 (daño puro de 5); y +6 de ataque contra infantería"
+    ],
+    "civilization_bonus": [
+      "Los Edificios, Muros/Puertas, y Granjas tienen +10%/+20%/+30%/+40% Puntos de resistencia en la Alta Edad Media/Feudal/Castillos/Imperial",
+      "Jinetes a camello, Hostigadores y Lanceros cuestan un -25%",
+      "Brulotes y Dromones tienen un +25% de velocidad de ataque",
+      "Avanzar a la Edad Imperial cuesta un -33%",
+      "Guardia Urbana y Patrulla Urbana gratis"
+    ],
+    "team_bonus": "Monjes sanan 100% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_byzantines.png"
+  },
+  {
+    "id": "8",
+    "name": "Persas",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Caballería"
+    ],
+    "unique_unit": [
+      "Elefante de Guerra",
+      "Savar"
+    ],
+    "description_unit": [
+      "Unidad lenta pero poderosa de caballería",
+      "Mejora única del Caballero, remplazando al Paladín"
+    ],
+    "unique_tech": [
+      "Kamandaran",
+      "Ciudadelas"
+    ],
+    "description_tech": [
+      "El coste en oro del arquero y subsiguientes es remplazado por madera",
+      "Los Castillos +4 de ataque, +3 contra Ariete, +3 contra Infantería y reciben -25% de daño adicional"
+    ],
+    "civilization_bonus": [
+      "+50 alimento, +50 madera al inicio del juego",
+      "Centro Urbano y Muelle tienen el doble de Puntos de Resistencia y trabajan un 5%/10%/15%/20% más rápido en la Alta Edad Media/Feudal/Castillos/Imperial",
+      "Tácticas de los Partos disponible en la Edad de los Castillos",
+      "Unidades montadas obtienen 5 oro por cada unidad militar asesinada",
+      "Pueden construir Caravanserai en la Edad Imperial"
+    ],
+    "team_bonus": "Jinetes, Caballeros y Savar/Paladines tienen +2 de ataque contra arqueros",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_persians.png"
+  },
+  {
+    "id": "9",
+    "name": "Sarracenos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Camellos",
+      "Naval"
+    ],
+    "unique_unit": [
+      "Mameluco"
+    ],
+    "description_unit": [
+      "Caballería con ataque de melé a distancia y con bonificación de ataque contra otra caballería"
+    ],
+    "unique_tech": [
+      "Fanatismo",
+      "Contrapesos"
+    ],
+    "description_tech": [
+      "Otorga a las unidades en camello +20 Puntos de Resistencia",
+      "Lanzapiedras y Manganas +15% de ataque"
+    ],
+    "civilization_bonus": [
+      "La tasa del Mercado es sólo del 5%",
+      "Mercado cuesta 75 madera",
+      "Los Barcos de Transporte tienen el doble de Puntos de Resistencia y pueden llevar +5 unidades",
+      "Las Galeras atacan un 25% más rápido",
+      "Las unidades de la Galería de tiro con arco (excepto el Hostigador y el Artillero Manual) tienen +1/+2/+3 de ataque contra edificios estándares en la Edad Feudal/Castillos/Imperial"
+    ],
+    "team_bonus": "Los arqueros de a pie tienen +2 de ataque contra edificios estándares",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_saracens.png"
+  },
+  {
+    "id": "10",
+    "name": "Turcos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Pólvora"
+    ],
+    "unique_unit": [
+      "Jenízaro"
+    ],
+    "description_unit": [
+      "Versión más fuerte del Artillero Manual"
+    ],
+    "unique_tech": [
+      "Sipahi",
+      "Artillería"
+    ],
+    "description_tech": [
+      "Otorga a la Caballería de Arqueros +20 de Puntos de Resistencia",
+      "Otorga a los cañones de asedio, galeones artillados y Torres de Bombardeo +2 de alcance"
+    ],
+    "civilization_bonus": [
+      "Las unidades de pólvora tienen +25% Puntos de Resistencia",
+      "Las tecnologías de pólvora son 50% más baratas",
+      "Química gratis",
+      "Los minadores trabajan un 20% más rápido",
+      "La mejora a Caballería Ligera y Húsar son gratis"
+    ],
+    "team_bonus": "Las unidades de pólvora se crean un 25% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_turks.png"
+  },
+  {
+    "id": "11",
+    "name": "Chinos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Arqueros"
+    ],
+    "unique_unit": [
+      "Chu Ko Nu"
+    ],
+    "description_unit": [
+      "Arquero con ballesta de repetición. Dispara múltiples flechas al mismo tiempo"
+    ],
+    "unique_tech": [
+      "Gran Muralla",
+      "Cohetería"
+    ],
+    "description_tech": [
+      "Aumenta los Puntos de resistencia de los muros y torres en un +30%",
+      "Aumenta el ataque de los Chu Ko Nu en +2 y de los Escorpiones en +4"
+    ],
+    "civilization_bonus": [
+      "Comienzan la partida con +3 Aldeanos, pero con -200 alimento, -50 madera",
+      "Los Centros Urbanos soportan 15 de población (en vez de cinco) y tienen +7 de Línea de visión",
+      "Las tecnologías son un 5%/10%/15% más baratas en la Edad Feudal/Castillos/Imperial",
+      "Los Buques de demolición tienen +50% Puntos de Resistencia"
+    ],
+    "team_bonus": "Las Granjas comienzan con +10% alimento",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_chinese.png"
+  },
+  {
+    "id": "12",
+    "name": "Japoneses",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Infantería"
+    ],
+    "unique_unit": [
+      "Samurái"
+    ],
+    "description_unit": [
+      "Infantería con ataque rápido y bonificación de daño contra unidades únicas"
+    ],
+    "unique_tech": [
+      "Yasama",
+      "Kataparuto"
+    ],
+    "description_tech": [
+      "Otorga flechas adicionales a las torres",
+      "Hace que los Lanzapiedras se empaqueten, se armen y disparen más rápido"
+    ],
+    "civilization_bonus": [
+      "Pesqueros tienen el doble de Puntos de Resistencia, +2 de armadura anti-proyectil y trabajan un 5%/10%/15%/20% más rápido en la Alta Edad Media/Feudal/Castillos/Imperial",
+      "Molinos, campamentos madereros y mineros son un 50% más baratos",
+      "La infantería ataca un 33% más rápido desde la Edad Feudal"
+    ],
+    "team_bonus": "Galeras tienen +50% de Línea de visión",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_japanese.png"
+  },
+  {
+    "id": "13",
+    "name": "Mongoles",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Arqueros a caballo"
+    ],
+    "unique_unit": [
+      "Mangudai"
+    ],
+    "description_unit": [
+      "Arquero a caballo con una bonificación de ataque contra las armas de asedio"
+    ],
+    "unique_tech": [
+      "Nómadas",
+      "Instrucción Militar"
+    ],
+    "description_tech": [
+      "Las casas mantienen su población si han sido destruidas",
+      "Aumenta la velocidad de movimiento de las Armas de Asedio en un +50%"
+    ],
+    "civilization_bonus": [
+      "Los cazadores trabajan un 40% más rápido",
+      "Laa Caballería Ligera, Húsar, y Lancero estepario tienen un +30% de puntos de resistencia",
+      "La Caballería de arqueros, Caballería Pesada de Arqueros y los Mangudai disparan un +25% más rápido"
+    ],
+    "team_bonus": "La línea de la Caballería de Exploración tiene +2 de línea de visión",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_mongols.png"
+  },
+  {
     "id": "14",
     "name": "Españoles",
     "expansion": "The Conquerors",
@@ -112,17 +420,299 @@
       "Supremacía"
     ],
     "description_tech": [
-      "Incrementa la velocidad de conversión de los monjes y misioneros. Misionero +1 de rango.",
-      "Otorga a los Aldeanos +6 de ataque, +2/+2 de armadura y +40 Puntos de resistencia."
+      "Incrementa la velocidad de conversión de los monjes y misioneros. Misionero +1 de rango",
+      "Otorga a los Aldeanos +6 de ataque, +2/+2 de armadura y +40 Puntos de resistencia"
     ],
     "civilization_bonus": [
-      "Los aldeanos construyen un 30% más rápido (20% las Maravillas).",
-      "Las mejoras en la herrería no cuestan oro.",
-      "Los proyectiles de los galeones artillados pueden rastrear objetivos en movimiento y se mueven más rápido.",
-      "Las Unidades de pólvora disparan un 18% más rápido.",
-      "Recibe 20 oro por cada tecnología desarrollada."
+      "Los aldeanos construyen un 30% más rápido (20% las Maravillas)",
+      "Las mejoras en la herrería no cuestan oro",
+      "Los proyectiles de los galeones artillados pueden rastrear objetivos en movimiento y se mueven más rápido",
+      "Las Unidades de pólvora disparan un 18% más rápido",
+      "Recibe 20 oro por cada tecnología desarrollada"
     ],
-    "team_bonus": "Carretas de Mercancías y Urcas generan +25% oro.",
+    "team_bonus": "Carretas de Mercancías y Urcas generan +25% oro",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_spanish.png"
+  },
+  {
+    "id": "15",
+    "name": "Hunos",
+    "expansion": "The Conquerors",
+    "focus": [
+      "Caballería"
+    ],
+    "unique_unit": [
+      "Tarcano"
+    ],
+    "description_unit": [
+      "Caballería que destaca por arrasar edificios"
+    ],
+    "unique_tech": [
+      "Razias",
+      "Ateísmo"
+    ],
+    "description_tech": [
+      "Los tarcanos se pueden crear en el Establo",
+      "Las victorias por Maravilla o reliquias +100 años y reduce la generación de recursos por Reliquia enemiga en un 50%"
+    ],
+    "civilization_bonus": [
+      "Comienzan con -100 madera, pero su límite de población está al máximo",
+      "En mapas nómadas, el primer Centro Urbano crea un caballo explorador",
+      "Los Arqueros a caballo son 10%/20% más baratos en la Edad de los Castillos/Imperial",
+      "Los Lanzapiedras son un 35% más precisos contra unidades"
+    ],
+    "team_bonus": "Los establos trabajan un 20% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_huns.png"
+  },
+  {
+    "id": "16",
+    "name": "Coreanos",
+    "expansion": "The Conquerors",
+    "focus": [
+      "Defensa",
+      "Naval"
+    ],
+    "unique_unit": [
+      "Carreta de Guerra",
+      "Barco Tortuga"
+    ],
+    "description_unit": [
+      "Caballería de arqueros blindada",
+      "Barco blindado que dispara bolas de cañón"
+    ],
+    "unique_tech": [
+      "Eupseong",
+      "Shinkichon"
+    ],
+    "description_tech": [
+      "Las torres (excepto Torres de Bombardeo) obtienen +2 de alcance",
+      "Otorga a la línea de Manganas +1 de alcance"
+    ],
+    "civilization_bonus": [
+      "Aldeanos tiene +3 Línea de visión",
+      "Canteros trabajan 20% más rápido",
+      "Las Torres se mejoran gratis al avanzar de Edad (la Torre de Bombardeo requiere de Química)",
+      "Las mejoras para armadura para arqueros son gratis",
+      "Los Barcos cuestan -20% madera",
+      "Los Arqueros y la infantería cuestan -50% madera"
+    ],
+    "team_bonus": "La línea de Mangana tiene el alcance mínimo reducido a 1",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_koreans.png"
+  },
+  {
+    "id": "17",
+    "name": "Aztecas",
+    "expansion": "The Conquerors",
+    "focus": [
+      "Infantería",
+      "Monjes"
+    ],
+    "unique_unit": [
+      "Guerrero Jaguar"
+    ],
+    "description_unit": [
+      "Infantería que tiene ataque adicional contra otra infantería"
+    ],
+    "unique_tech": [
+      "Átlatl",
+      "Guerras Florales"
+    ],
+    "description_tech": [
+      "Los Guerrilleros obtienen +1 de ataque y alcance",
+      "La infantería obtiene +4 de ataque"
+    ],
+    "civilization_bonus": [
+      "Los aldeanos llevan +3 de todos los recursos",
+      "Las unidades militares se crean un +11% más rápido",
+      "Los monjes reciben +5 PR por cada tecnología del monasterio desarrollada",
+      "Comienzan con +50 oro"
+    ],
+    "team_bonus": "Reliquias +33% oro generado",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_aztecs.png"
+  },
+  {
+    "id": "18",
+    "name": "Mayas",
+    "expansion": "The Conquerors",
+    "focus": [
+      "Arqueros"
+    ],
+    "unique_unit": [
+      "Arquero Emplumado"
+    ],
+    "description_unit": [
+      "Arquero a pie con mucha movilidad y gran defensa anti-proyectil"
+    ],
+    "unique_tech": [
+      "Jabalineros Hul'che",
+      "El Dorado"
+    ],
+    "description_tech": [
+      "Otorga a los Hostigadores un segundo proyectil",
+      "Los Guerreros Águila obtienen +40 Puntos de Resistencia"
+    ],
+    "civilization_bonus": [
+      "Empiezan con un aldeano adicional, pero -50 alimento",
+      "Los recursos naturales tardan un 15% más en agotarse",
+      "Las unidades de arqueros (excepto Hostigadores) cuestan -10%/-20%/-30% en la Edad Feudal/Castillos/Imperial"
+    ],
+    "team_bonus": "Los muros son un 50% más baratos",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_mayans.png"
+  },
+  {
+    "id": "19",
+    "name": "Eslavos",
+    "expansion": "The Forgotten",
+    "focus": [
+      "Infantería",
+      "Armas de asedio"
+    ],
+    "unique_unit": [
+      "Boyardo"
+    ],
+    "description_unit": [
+      "Caballería pesada muy resistente al daño cuerpo a cuerpo"
+    ],
+    "unique_tech": [
+      "Detinets",
+      "Druzhina"
+    ],
+    "description_tech": [
+      "Reemplaza el 40% del coste de piedra de los Castillos y torres por madera",
+      "Las unidades de infantería dañan a los enemigos adyacentes"
+    ],
+    "civilization_bonus": [
+      "Las Armas de asedio son un 15% más baratas",
+      "Suministros y Gambesones gratis",
+      "Los Granjeros trabajan un 15% mas rápido",
+      "Los Monjes se mueven un 20% más rápido"
+    ],
+    "team_bonus": "Cuarteles, Establos, Galerías de tiro con arco y Talleres de Maquinaria de Asedio proporcionan un +5 de población",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_slavs.png"
+  },
+  {
+    "id": "20",
+    "name": "Incas",
+    "expansion": "The Forgotten",
+    "focus": [
+      "Infantería"
+    ],
+    "unique_unit": [
+      "Hondero",
+      "Kamayuk"
+    ],
+    "description_unit": [
+      "Arquero con bonificación de ataque contra infantería",
+      "Infantería con lanza larga que puede atacar desde la distancia"
+    ],
+    "unique_tech": [
+      "Huaracas",
+      "Escudos de Tela"
+    ],
+    "description_tech": [
+      "Los Honderos +1 ataque y remueve el alacance mínimo de los Hostigadores y Honderos",
+      "Los Kamayuks, los Honderos y los Guerreros Águilas obtienen +1/+2 de armadura"
+    ],
+    "civilization_bonus": [
+      "Unidades militares cuestan -10%/-15%/-20%/-25% alimento en Alta Edad Media/Feudal/Castillos/Imperial",
+      "Las mejoras de la infantería en la Herrería afectan a los aldeanos a partir de la Edad de los Castillos",
+      "Las casas admiten 10 de población",
+      "Los edificios cuestan un -15% piedra"
+    ],
+    "team_bonus": "Comienzan con una llama gratis",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_inca.png"
+  },
+  {
+    "id": "21",
+    "name": "Indios",
+    "expansion": "The Forgotten",
+    "focus": [
+      "Camellos",
+      "Pólvora"
+    ],
+    "unique_unit": [
+      "Arquero en Elefante",
+      "Camello Imperial"
+    ],
+    "description_unit": [
+      "Arquero montado",
+      "Camello anti caballería"
+    ],
+    "unique_tech": [
+      "Sultanato",
+      "Shatagni"
+    ],
+    "description_tech": [
+      "Toda forma de acumulación de oro es 10% más rápida (minería, comercio, reliquias)",
+      "Los artilleros manuales tienen +1 de alcance"
+    ],
+    "civilization_bonus": [
+      "Aldeanos cuestan -10% en Alta Edad Media, -15% en la Edad Feudal, -20% en Edad de los Castillos, -30% en Edad Imperial",
+      "Aldeanos pescan 15% más rápido y cargan +25 unidades de pescado",
+      "Camellos tienen +1/+1 de armadura"
+    ],
+    "team_bonus": "Camellos tienen +5 de ataque contra edificios",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_indians.png"
+  },
+  {
+    "id": "22",
+    "name": "Italianos",
+    "expansion": "The Forgotten",
+    "focus": [
+      "Arqueros",
+      "Naval"
+    ],
+    "unique_unit": [
+      "Genovés Ballestero",
+      "Condotiero"
+    ],
+    "description_unit": [
+      "Arquero con alto valor de armadura y bonificación de ataque contra la caballería",
+      "Unidad de infantería con bonificación de ataque contra las unidades de pólvora"
+    ],
+    "unique_tech": [
+      "Escudo Pavés",
+      "Ruta de la Seda"
+    ],
+    "description_tech": [
+      "Los arqueros a pie y Condotieros reciben +1/+1 armadura",
+      "Carreta de Mercancías y Urca Mercante cuestan -50%"
+    ],
+    "civilization_bonus": [
+      "Avanzar a la siguiente edad cuesta un 15% más barato",
+      "Las tecnologías del muelle y de la Universidad cuestan un -33%",
+      "Los Pesqueros cuestan un -15%",
+      "Las unidades de pólvora cuestan un -20%"
+    ],
+    "team_bonus": "El Condotiero puede ser creado en los cuarteles de los aliados",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_italians.png"
+  },
+  {
+    "id": "23",
+    "name": "Magiares",
+    "expansion": "The Forgotten",
+    "focus": [
+      "Caballería"
+    ],
+    "unique_unit": [
+      "Huszár Magiar"
+    ],
+    "description_unit": [
+      "Unidad de caballería con bonificación de ataque contra las armas de asedio"
+    ],
+    "unique_tech": [
+      "Ejército Corviniano",
+      "Arco Recurvo"
+    ],
+    "description_tech": [
+      "El Huszár Magiar no cuesta oro",
+      "Los arqueros a caballo tienen +1 de alcance"
+    ],
+    "civilization_bonus": [
+      "Los Aldeanos matan a los animales salvajes de un solo golpe",
+      "Forja, Fundición de Hierro y Alto Horno son gratis",
+      "Caballería de Exploración y subsiguientes son un 10% más baratos"
+    ],
+    "team_bonus": "Los Arqueros a caballo se crean un 25% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_magyars.png"
   }
 ]

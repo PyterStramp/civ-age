@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.civilization-details {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.civilization-details img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+.civilization-details h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+.civilization-details p {
+  margin: 10px 0;
+}
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 150px;
+  margin: 20px auto;
+}
+.back-link:hover {
+  background-color: #0056b3;
+}

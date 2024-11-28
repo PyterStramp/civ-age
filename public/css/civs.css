@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.civilization-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.civilization-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.civilization-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.civilization-card h3 {
+  margin: 10px 0;
+}
+
+.civilization-card p {
+  margin: 5px 0;
+}
+
+.civilization-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.civilization-card a:hover {
+  background-color: #0056b3;
+}
+
+input#search-bar {
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
