@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civilización - Detalles</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+      }
+      .civilization-details {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .civilization-details img {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+      }
+      .civilization-details h2 {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .civilization-details p {
+        margin: 10px 0;
+      }
+      .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        width: 150px;
+        margin: 20px auto;
+      }
+      .back-link:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Detalles de la Civilización</h1>
+    </header>
+    <div class="civilization-details" id="civilization-details"></div>
+    <a href="/civilizations" class="back-link">Volver a Civilizaciones</a>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const civilizationId = urlParams.get("id");
+
+      fetch(`/api/civilizations/${civilizationId}`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const civilization = data.civilization;
+          const detailsDiv = document.getElementById("civilization-details");
+          detailsDiv.innerHTML = `
+          <img src="${civilization.img_url}" alt="${civilization.name}">
+          <h2>${civilization.name}</h2>
+          <p><strong>Expansión:</strong> ${civilization.expansion}</p>
+          <p><strong>Focus:</strong> ${civilization.focus.join(", ")}</p>
+          <p><strong>Unidad Única:</strong> ${civilization.unique_unit.join(
+            ", "
+          )}</p>
+          <p><strong>Descripción de Unidad:</strong> ${civilization.description_unit.join(
+            ", "
+          )}</p>
+          <p><strong>Tecnologías Únicas:</strong> ${civilization.unique_tech.join(
+            ", "
+          )}</p>
+          <p><strong>Descripción de Tecnologías:</strong> ${civilization.description_tech.join(
+            ", "
+          )}</p>
+          <p><strong>Bonificaciones:</strong></p>
+          <ul>
+            ${civilization.civilization_bonus
+              .map((bonus) => `<li>${bonus}</li>`)
+              .join("")}
+          </ul>
+          <p><strong>Bonificación de Equipo:</strong> ${
+            civilization.team_bonus
+          }</p>
+        `;
+        })
+        .catch((err) => {
+          const detailsDiv = document.getElementById("civilization-details");
+          detailsDiv.innerHTML = `<p>Error al cargar los detalles de la civilización: ${err.message}</p>`;
+        });
+    </script>
+  </body>
+</html>

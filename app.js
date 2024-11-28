@@ -1,15 +1,11 @@
 const express = require('express');
+const path = require('path');
 require('dotenv').config();
+const rutas = require('./routes/rutas');
 
 const app = express();
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
-
-app.get('/api/civilizations', (req, res) => {
-    res.json({ message: 'Acá estarán las civilizaciones en desarrollo.' });
-});  
+app.use(rutas);
 
 module.exports = app;

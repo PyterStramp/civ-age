@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "name": "Britanos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Arqueros"
+    ],
+    "unique_unit": [
+      "Arquero de tiro largo"
+    ],
+    "description_unit": [
+      "Arquero a pie de largo alcance"
+    ],
+    "unique_tech": [
+      "Voluntarios de caballería",
+      "Warwolf"
+    ],
+    "description_tech": [
+      "Los arqueros a pie tienen +1 de alcance y las Torres +2 de ataque.",
+      "Los Lanzapiedras obtienen daño en área y +100% de puntería contra unidades."
+    ],
+    "civilization_bonus": [
+      "Los Centros Urbanos cuestan -50% madera a partir de la Edad de los Castillos.",
+      "Los arqueros a pie (excepto Hostigadores) tienen +1/+2 de alcance en la Edad de los Castillos/Imperial.",
+      "Los pastores trabajan un 25% más rápido."
+    ],
+    "team_bonus": "La Galería de tiro con arco trabaja un 10% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_britons.png"
+  },
+  {
+    "id": "2",
+    "name": "Celtas",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Infantería",
+      "Armas de asedio"
+    ],
+    "unique_unit": [
+      "Invasor de pastos"
+    ],
+    "description_unit": [
+      "Unidad de infantería veloz"
+    ],
+    "unique_tech": [
+      "Bastión",
+      "Furor Celta"
+    ],
+    "description_tech": [
+      "Los Castillos y torres disparan un 33% más rápido.",
+      "Las unidades del Taller de Maquinaria de Asedio tienen un +40% de Puntos de Resistencia."
+    ],
+    "civilization_bonus": [
+      "La infantería se mueve un 15% más rápido a partir de la Edad Feudal.",
+      "Las Armas de Asedio disparan un 25% más rápido.",
+      "Los aldeanos recogen madera un 25% más rápido.",
+      "El ganado enemigo se puede convertir sin importar si el enemigo tiene visión sobre la unidad."
+    ],
+    "team_bonus": "El Taller de Maquinaria de Asedio trabaja un 20% más rápido",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_celts.png"
+  },
+  {
+    "id": "6",
+    "name": "Vikingos",
+    "expansion": "Age of Kings",
+    "focus": [
+      "Infantería",
+      "Naval"
+    ],
+    "unique_unit": [
+      "Berserker",
+      "Drakkar"
+    ],
+    "description_unit": [
+      "Infantería que regenera sus Puntos de resistencia",
+      "Barco de guerra que dispara múltiples flechas"
+    ],
+    "unique_tech": [
+      "Hésires",
+      "Trance Frenético"
+    ],
+    "description_tech": [
+      "Otorga a la infantería +5 de ataque contra caballería y +4 de ataque contra camellos.",
+      "Aumenta la velocidad de regeneración de los Berserkers."
+    ],
+    "civilization_bonus": [
+      "La infantería tiene +10%/+15%/+20% Puntos de Resistencia en la Edad Feudal/Castillos/Imperial.",
+      "Carretilla y Carro de Mano gratis.",
+      "Los barcos de guerra son un 15%/15%/20% más baratos en la Edad Feudal/Castillos/Imperial."
+    ],
+    "team_bonus": "Los muelles son 15% más baratos",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_vikings.png"
+  },
+    {
+    "id": "14",
+    "name": "Españoles",
+    "expansion": "The Conquerors",
+    "focus": [
+      "Monjes",
+      "Pólvora"
+    ],
+    "unique_unit": [
+      "Conquistador",
+      "Misionero"
+    ],
+    "description_unit": [
+      "Unidad de pólvora a caballo",
+      "Monje montado"
+    ],
+    "unique_tech": [
+      "Inquisición",
+      "Supremacía"
+    ],
+    "description_tech": [
+      "Incrementa la velocidad de conversión de los monjes y misioneros. Misionero +1 de rango.",
+      "Otorga a los Aldeanos +6 de ataque, +2/+2 de armadura y +40 Puntos de resistencia."
+    ],
+    "civilization_bonus": [
+      "Los aldeanos construyen un 30% más rápido (20% las Maravillas).",
+      "Las mejoras en la herrería no cuestan oro.",
+      "Los proyectiles de los galeones artillados pueden rastrear objetivos en movimiento y se mueven más rápido.",
+      "Las Unidades de pólvora disparan un 18% más rápido.",
+      "Recibe 20 oro por cada tecnología desarrollada."
+    ],
+    "team_bonus": "Carretas de Mercancías y Urcas generan +25% oro.",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_spanish.png"
+  }
+]
