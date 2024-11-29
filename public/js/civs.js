@@ -47,6 +47,36 @@ function populateFilters(civilizations) {
   });
 }
 
+const applyFilters = () => {
+  const selectedExpansion = document.getElementById("filter-expansion").value;
+  const selectedFocus = document.getElementById("filter-focus").value;
+  const sortAlphabetically = document.getElementById("sort-alphabetically").checked;
+
+  document.getElementById("search-bar").value = "";
+
+  let filteredCivilizations = civilizations;
+
+  if (sortAlphabetically) {
+    filteredCivilizations.sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    filteredCivilizations = originalOrder;
+  }
+
+  if (selectedExpansion) {
+    filteredCivilizations = filteredCivilizations.filter(
+      (civ) => civ.expansion === selectedExpansion
+    );
+  }
+
+  if (selectedFocus) {
+    filteredCivilizations = filteredCivilizations.filter(
+      (civ) => civ.focus.includes(selectedFocus)
+    );
+  }
+
+  renderCivilizations(filteredCivilizations);
+}
+
 fetch("/api/civilizations")
   .then((response) => {
     if (!response.ok) {
@@ -74,81 +104,8 @@ document.getElementById("search-bar").addEventListener("input", (event) => {
   renderCivilizations(filteredCivilizations);
 });
 
-document.getElementById("filter-expansion").addEventListener("change", () => {
-  const selectedExpansion = document.getElementById("filter-expansion").value;
-  const selectedFocus = document.getElementById("filter-focus").value;
+document.getElementById("filter-expansion").addEventListener("change", applyFilters);
 
-  document.getElementById("search-bar").value = "";
+document.getElementById("filter-focus").addEventListener("change", applyFilters);
 
-  let filteredCivilizations = civilizations;
-
-  if (selectedExpansion) {
-    filteredCivilizations = filteredCivilizations.filter(
-      (civ) => civ.expansion === selectedExpansion
-    );
-  }
-
-  if (selectedFocus) {
-    filteredCivilizations = filteredCivilizations.filter((civ) =>
-      civ.focus.includes(selectedFocus)
-    );
-  }
-
-  renderCivilizations(filteredCivilizations);
-});
-
-document.getElementById("filter-focus").addEventListener("change", () => {
-  const selectedExpansion = document.getElementById("filter-expansion").value;
-  const selectedFocus = document.getElementById("filter-focus").value;
-
-  document.getElementById("search-bar").value = "";
-
-  let filteredCivilizations = civilizations;
-
-  // Filtrar por expansión
-  if (selectedExpansion) {
-    filteredCivilizations = filteredCivilizations.filter(
-      (civ) => civ.expansion === selectedExpansion
-    );
-  }
-
-  if (selectedFocus) {
-    filteredCivilizations = filteredCivilizations.filter((civ) =>
-      civ.focus.includes(selectedFocus)
-    );
-  }
-
-  renderCivilizations(filteredCivilizations);
-});
-
-document
-  .getElementById("sort-alphabetically")
-  .addEventListener("change", () => {
-    const selectedExpansion = document.getElementById("filter-expansion").value;
-    const selectedFocus = document.getElementById("filter-focus").value;
-    const sortAlphabetically = document.getElementById(
-      "sort-alphabetically"
-    ).checked;
-    document.getElementById("search-bar").value = "";
-
-    let filteredCivilizations = civilizations;
-
-    if (selectedExpansion) {
-      filteredCivilizations = filteredCivilizations.filter(
-        (civ) => civ.expansion === selectedExpansion
-      );
-    }
-
-    if (selectedFocus) {
-      filteredCivilizations = filteredCivilizations.filter((civ) =>
-        civ.focus.includes(selectedFocus)
-      );
-    }
-
-    if (sortAlphabetically) {
-      filteredCivilizations.sort((a, b) => a.name.localeCompare(b.name));
-    } else {
-      filteredCivilizations = [...originalOrder];
-    }
-    renderCivilizations(filteredCivilizations);
-  });
+document.getElementById("sort-alphabetically").addEventListener("change", applyFilters);
