@@ -10,30 +10,52 @@ fetch(`/api/civilizations/${civilizationId}`)
   })
   .then((data) => {
     const civilization = data.civilization;
+    console.log(civilization); // Verifica toda la estructura del objeto
+
     const detailsDiv = document.getElementById("civilization-details");
+
+    // Función para manejar los posibles objetos en las propiedades
+    const safeJoin = (value) => {
+      if (Array.isArray(value)) {
+        if (value.length > 0 && typeof value[0] === 'object') {
+          // Si es un array de objetos, extrae las propiedades 'name'
+          return value.map((item) => item.name).join(", ");
+        } else {
+          // Si es un array simple, simplemente une sus elementos
+          return value.join(", ");
+        }
+      }
+      return value || '';  // Si no es ni array ni objeto, devuelve el valor tal cual o cadena vacía
+    };
+
+    const safeJoinDescriptions = (value) => {
+      if (Array.isArray(value)) {
+        if (value.length > 0 && typeof value[0] === 'object') {
+          // Si es un array de objetos, extrae las propiedades 'description'
+          return value.map((item) => item.description).join(", ");
+        } else {
+          // Si es un array simple, simplemente une sus elementos
+          return value.join(", ");
+        }
+      }
+      return value || '';  // Si no es ni array ni objeto, devuelve el valor tal cual o cadena vacía
+    };
+
     detailsDiv.innerHTML = `
-    <img src="${civilization.img_url}" alt="${civilization.name}">
-    <h2>${civilization.name}</h2>
-    <p><strong>Expansión:</strong> ${civilization.expansion}</p>
-    <p><strong>Focus:</strong> ${civilization.focus.join(", ")}</p>
-    <p><strong>Unidad Única:</strong> ${civilization.unique_unit.join(", ")}</p>
-    <p><strong>Descripción de Unidad:</strong> ${civilization.description_unit.join(
-      ", "
-    )}</p>
-    <p><strong>Tecnologías Únicas:</strong> ${civilization.unique_tech.join(
-      ", "
-    )}</p>
-    <p><strong>Descripción de Tecnologías:</strong> ${civilization.description_tech.join(
-      ", "
-    )}</p>
-    <p><strong>Bonificaciones:</strong></p>
-    <ul>
-      ${civilization.civilization_bonus
-        .map((bonus) => `<li>${bonus}</li>`)
-        .join("")}
-    </ul>
-    <p><strong>Bonificación de Equipo:</strong> ${civilization.team_bonus}</p>
-  `;
+      <img src="${civilization.img_url}" alt="${civilization.name}">
+      <h2>${civilization.name}</h2>
+      <p><strong>Expansión:</strong> ${civilization.expansion}</p>
+      <p><strong>Focus:</strong> ${safeJoin(civilization.focus)}</p>
+      <p><strong>Unidad Única:</strong> ${safeJoin(civilization.unique_unit)}</p>
+      <p><strong>Descripción de Unidad:</strong> ${safeJoinDescriptions(civilization.unique_unit)}</p>
+      <p><strong>Tecnologías Únicas:</strong> ${safeJoin(civilization.unique_tech)}</p>
+      <p><strong>Descripción de Tecnologías:</strong> ${safeJoinDescriptions(civilization.unique_tech)}</p>
+      <p><strong>Bonificaciones:</strong></p>
+      <ul>
+        ${safeJoin(civilization.civilization_bonus)}
+      </ul>
+      <p><strong>Bonificación de Equipo:</strong> ${civilization.team_bonus}</p>
+    `;
   })
   .catch((err) => {
     const detailsDiv = document.getElementById("civilization-details");
