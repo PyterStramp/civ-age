@@ -714,5 +714,37 @@
     ],
     "team_bonus": "Los Arqueros a caballo se crean un 25% más rápido",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_magyars.png"
+  },
+  {
+    "id": "24",
+    "name": "Bereberes",
+    "expansion": "The African Kingdoms",
+    "focus": [
+      "Caballería",
+      "Naval"
+    ],
+    "unique_unit": [
+      "Camello Arquero",
+      "Escaramuzador Zenete"
+    ],
+    "description_unit": [
+      "Arquero montado con bonificación de ataque contra otros arqueros montados",
+      "Hostigador montado"
+    ],
+    "unique_tech": [
+      "Alcazabas",
+      "Dromedarios Magrebíes"
+    ],
+    "description_tech": [
+      "Aumenta la velocidad de trabajo de todos los Castillos del equipo en un +25%",
+      "Las unidades a camello regeneran 0.25 PR/min"
+    ],
+    "civilization_bonus": [
+      "Los aldeanos se mueven un 5% más rápido en la Alta Edad Media; y 10% más rápido a partir de la Edad Feudal",
+      "Las unidades del Establo son un 15%/20% más baratas en la Edad de los Castillos/Imperial",
+      "Los barcos se mueven un +10% más rápido"
+    ],
+    "team_bonus": "El Escaramuzador Zenete está disponible en la Galería de tiro con arco",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_berber.png"
   }
 ]

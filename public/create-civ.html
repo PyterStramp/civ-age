@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/page-icon.png" />
+    <title>Crear Civilización - Age of Empires II</title>
+    <link rel="stylesheet" href="css/create-civ.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crear Civilización</h1>
+            <a href="/" class="back-button">← Volver a civilizaciones</a>
+        </header>
+
+        <form id="civilization-form" class="creation-form">
+            <!-- Información básica -->
+            <section class="form-section">
+                <h2>Información Básica</h2>
+                <div class="form-group">
+                    <label for="name">Nombre de la Civilización</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="img-url">Url de la imagen</label>
+                    <input type="text" id="img-url" name="img-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="expansion">Expansión</label>
+                    <select id="expansion" name="expansion" required>
+                        <option value="Age of Kings">Age of Kings</option>
+                        <option value="The Conquerors">The Conquerors</option>
+                        <option value="The Forgotten">The Forgotten</option>
+                        <option value="The African Kingdoms">The African Kingdoms</option>
+                        <option value="Rise of the Rajas">Rise of the Rajas</option>
+                    </select>
+                </div>
+
+
+            </section>
+
+            <!-- Focus -->
+            <section class="form-section">
+                <h2>Focus</h2>
+                <div id="focus-container">
+                    <div class="focus-entry form-group">
+                        <input type="text" class="focus-input" placeholder="Ejemplo: Caballería">
+                        <button type="button" class="add-button" data-target="focus">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unidades Únicas -->
+            <section class="form-section">
+                <h2>Unidades Únicas</h2>
+                <div id="unit-container">
+                    <div class="unit-entry form-group">
+                        <input type="text" class="unit-name" placeholder="Nombre de la unidad">
+                        <textarea class="expandable-input unit-description" rows="1" placeholder="Descripción de la unidad"></textarea>
+                        <button type="button" class="add-button" data-target="unit">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tecnologías Únicas -->
+            <section class="form-section">
+                <h2>Tecnologías Únicas</h2>
+                <div id="tech-container">
+                    <div class="tech-entry form-group">
+                        <input type="text" class="tech-name" placeholder="Nombre de la tecnología">
+                        <textarea class="expandable-input tech-description" rows="1" placeholder="Descripción de la tecnología"></textarea>
+                        <button type="button" class="add-button" data-target="tech">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bonus de Civilización -->
+            <section class="form-section">
+                <h2>Bonus de Civilización</h2>
+                <div id="bonus-container">
+                    <div class="bonus-entry form-group">
+                        <textarea class="expandable-input bonus-input" rows="1" placeholder="Descripción del bonus"></textarea>
+                        <button type="button" class="add-button" data-target="bonus">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Bonus -->
+            <section class="form-section">
+                <h2>Team Bonus</h2>
+                <div class="form-group">
+                    <input type="text" id="team-bonus" name="team-bonus" required>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-button">Crear Civilización</button>
+            </div>
+        </form>
+    </div>
+    <script src="/js/create-civ.js"></script>
+</body>
+</html>
