@@ -5,7 +5,8 @@ const getConnection = () => {
         host: "localhost",
         user: "root",
         password: "",
-        database: "civ_age"
+        database: "cv_age",
+        insecureAuth : true,
     });
     con.connect((err) => {
         if (err) {

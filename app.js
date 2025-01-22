@@ -5,7 +5,7 @@ const rutas = require('./routes/rutas');
 
 const app = express();
 app.use(express.static('public'));
-
+app.use(express.json());
 app.use(rutas);
 
 module.exports = app;
