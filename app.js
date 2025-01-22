@@ -4,8 +4,10 @@ require('dotenv').config();
 const rutas = require('./routes/rutas');
 
 const app = express();
+app.use(express.json());
 app.use(express.static('public'));
 
-app.use(rutas);
+app.use('/', rutas);
+
 
 module.exports = app;

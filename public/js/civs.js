@@ -2,7 +2,7 @@
 let civilizations = [];
 let originalOrder = [];
 
-function renderCivilizations(filteredCivilizations) {
+const renderCivilizations = (filteredCivilizations) => {
   const civilizationList = document.getElementById("civilization-list");
   civilizationList.innerHTML = "";
 
@@ -20,7 +20,7 @@ function renderCivilizations(filteredCivilizations) {
   });
 }
 
-function populateFilters(civilizations) {
+const populateFilters = (civilizations) =>{
   const expansionFilter = document.getElementById("filter-expansion");
   const focusFilter = document.getElementById("filter-focus");
 
