@@ -39,3 +39,12 @@ fetch(`/api/civilizations/${civilizationId}`)
     const detailsDiv = document.getElementById("civilization-details");
     detailsDiv.innerHTML = `<p>Error al cargar los detalles de la civilización: ${err.message}</p>`;
   });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttonsL = document.getElementById("link-container");
+  buttonsL.innerHTML = `
+    <a href="/civilizations" class="back-link link-generic">Volver a Civilizaciones</a>
+    <a href="/edit-civ?id=${civilizationId}"class="edit-link link-generic">Editar</a>
+    <a href=""class="delete-link link-generic">Eliminar</a>
+  `;
+});

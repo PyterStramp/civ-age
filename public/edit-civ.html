@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Civilización</title>
+    <link rel="icon" type="image/png" href="/img/page-icon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/edit-civ.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Editar Civilización</h1>
+        <a href="/civilizations" class="back-button"
+          >← Volver a civilizaciones</a
+        >
+      </header>
+
+      <form id="edit-civilization-form" class="edit-form">
+        <!-- Campos editables -->
+        <section class="form-section">
+          <h2>Información Básica</h2>
+          <div class="form-group">
+            <label for="name">Nombre de la Civilización</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="img_url">URL de la imagen</label>
+            <input type="text" id="img_url" name="img_url" required />
+          </div>
+
+          <div class="form-group">
+            <label for="expansion">Expansión</label>
+            <select id="expansion" name="expansion" required>
+              <option value="Age of Kings">Age of Kings</option>
+              <option value="The Conquerors">The Conquerors</option>
+              <option value="The Forgotten">The Forgotten</option>
+              <option value="The African Kingdoms">The African Kingdoms</option>
+              <option value="Rise of the Rajas">Rise of the Rajas</option>
+            </select>
+          </div>
+        </section>
+        <!-- Después de la sección de Información Básica -->
+        <section class="form-section">
+          <h2>Focus</h2>
+          <div id="focus-container">
+            <!-- Los focus existentes se cargarán aquí dinámicamente -->
+          </div>
+          <button type="button" class="add-button" data-target="focus">
+            +
+          </button>
+        </section>
+
+        <section class="form-section">
+          <h2>Unidades Únicas</h2>
+          <div id="unit-container">
+            <!-- Las unidades y sus descripciones se cargarán aquí -->
+          </div>
+          <button type="button" class="add-button" data-target="unit">+</button>
+        </section>
+
+        <!-- Tecnologías Únicas -->
+        <section class="form-section">
+          <h2>Tecnologías Únicas</h2>
+          <div class="form-group">
+            <label for="tech1">Primera Tecnología</label>
+            <input type="text" id="tech1" class="tech-input" required />
+            <label for="tech1_desc">Descripción</label>
+            <textarea
+              id="tech1_desc"
+              class="tech-desc-input"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="tech2">Segunda Tecnología</label>
+            <input type="text" id="tech2" class="tech-input" required />
+            <label for="tech2_desc">Descripción</label>
+            <textarea
+              id="tech2_desc"
+              class="tech-desc-input"
+              required
+            ></textarea>
+          </div>
+        </section>
+        <section class="form-section">
+          <h2>Bonificaciones</h2>
+          <div id="bonus-container">
+            <!-- Las bonificaciones se cargarán aquí -->
+          </div>
+          <button type="button" class="add-button" data-target="bonus">
+            +
+          </button>
+        </section>
+        <!-- Team Bonus -->
+        <section class="form-section">
+          <h2>Bonificación de Equipo</h2>
+          <div class="form-group">
+            <label for="team_bonus">Bonificación</label>
+            <input type="text" id="team_bonus" name="team_bonus" required />
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit" class="submit-button">Guardar Cambios</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/edit-civilization.js"></script>
+  </body>
+</html>

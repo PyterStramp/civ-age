@@ -746,5 +746,35 @@
     ],
     "team_bonus": "El Escaramuzador Zenete está disponible en la Galería de tiro con arco",
     "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_berber.png"
+  },
+  {
+    "id": "25",
+    "name": "Etíopes",
+    "img_url": "https://www.forgottenempires.net/wp-content/uploads/menu_techtree_ethiopians.png",
+    "expansion": "The African Kingdoms",
+    "focus": [
+      "Arqueros",
+      "Armas de asedio"
+    ],
+    "unique_unit": [
+      "Shotelai"
+    ],
+    "description_unit": [
+      "Infantería de gran despliegue con alto poder de ataque y veloz, pero carente de armadura y bajos puntos de resistencia"
+    ],
+    "unique_tech": [
+      "Centralización",
+      "Mecanismos de Torsión"
+    ],
+    "description_tech": [
+      "Shotelais y jinetes a camello reciben -3 de daño de unidades montadas",
+      "El Área de efecto se incrementa en las unidades del Taller de Maquinaria de Asedio"
+    ],
+    "civilization_bonus": [
+      "Los arqueros a pie disparan un 18% más rápido",
+      "Al avanzar de Edad reciben +100 alimento, +100 oro",
+      "La mejora a Piquero es gratis"
+    ],
+    "team_bonus": "Puestos avanzados tienen +3 LDV y no cuestan piedra"
   }
 ]

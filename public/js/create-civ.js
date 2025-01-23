@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const result = await response.json();
             console.log('Civilización creada:', result);
-            
+            alert('Se ha creado la civilización con éxito');
             // Redirigir a la página principal después de crear
             window.location.href = '/';
         } catch (error) {

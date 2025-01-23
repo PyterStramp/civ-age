@@ -31,18 +31,45 @@ header {
 .civilization-details p {
   margin: 10px 0;
 }
-.back-link {
+.link-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.link-generic {
   display: block;
   text-align: center;
-  margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
   color: #fff;
-  text-decoration: none;
   border-radius: 5px;
   width: 150px;
   margin: 20px auto;
 }
+
+.back-link {
+  background-color: #007bff;
+}
 .back-link:hover {
   background-color: #0056b3;
+}
+
+.edit-link {
+  background-color: #11c60a;
+}
+.edit-link:hover {
+  background-color: #00b31e;
+}
+
+.delete-link {
+  background-color: #ff3700;
+}
+.delete-link:hover {
+  background-color: #b31e00;
 }
