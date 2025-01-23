@@ -44,7 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttonsL = document.getElementById("link-container");
   buttonsL.innerHTML = `
     <a href="/civilizations" class="back-link link-generic">Volver a Civilizaciones</a>
-    <a href="/edit-civ?id=${civilizationId}"class="edit-link link-generic">Editar</a>
-    <a href=""class="delete-link link-generic">Eliminar</a>
+    <a href="/edit-civ?id=${civilizationId}" class="edit-link link-generic">Editar</a>
+    <button class="delete-link link-generic">Eliminar</button>
+
+    <!-- Modal de confirmación -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirmar Eliminación</h3>
+            <p>¿Estás seguro de eliminar esta civilización? No se podrá deshacer.</p>
+            <div class="modal-buttons">
+                <button id="confirm-delete" class="delete-btn">Sí, eliminar</button>
+                <button id="cancel-delete" class="cancel-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
   `;
 });

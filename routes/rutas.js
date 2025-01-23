@@ -160,4 +160,34 @@ router.put('/api/civilizations/:id', async (req, res) => {
     }
 });
 
+router.delete('/api/civilizations/:id', async (req, res) => {
+    try {
+        const civId = req.params.id;
+        const jsonPath = path.join(__dirname, '../data/civilizations.json');
+        const fileContent = await fs.readFile(jsonPath, 'utf8');
+        const civilizations = JSON.parse(fileContent);
+
+        // Encontrar el índice de la civilización a eliminar
+        const civIndex = civilizations.findIndex(civ => civ.id === civId);
+
+        if (civIndex === -1) {
+            return res.status(404).json({ message: 'Civilización no encontrada' });
+        }
+
+        // Eliminar la civilización del array
+        civilizations.splice(civIndex, 1);
+
+        // Guardar el archivo actualizado
+        await fs.writeFile(jsonPath, JSON.stringify(civilizations, null, 2));
+
+        res.json({ message: 'Civilización eliminada exitosamente' });
+    } catch (error) {
+        console.error('Error al eliminar civilización:', error);
+        res.status(500).json({
+            message: 'Error al eliminar la civilización',
+            error: error.message
+        });
+    }
+});
+
 module.exports = router;
